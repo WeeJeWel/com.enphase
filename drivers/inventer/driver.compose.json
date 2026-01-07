@@ -1,0 +1,33 @@
+{
+  "$extends": "enphase",
+  "name": {
+    "nl": "Enphase IQ Batterij",
+    "en": "Enphase IQ Battery"
+  },
+  "class": "other",
+  "capabilities": [
+    "IQbat_solar_production",
+    "IQbat_grid_import",
+    "IQbat_charge",
+    "IQbat_discharge",
+    "IQbat_home",
+    "IQbat_export",
+    "IQbat_last_update",
+    "IQbat_level",
+    "IQbat_connectiontype",
+    "measure_battery"
+  ],
+  "capabilitiesOptions": {
+    "IQbat_connectiontype": {
+      "title": {
+        "en": "Connection",
+        "nl": "Verbinding"
+      }
+    }
+  },
+  "capabilitiesConfig": {
+    "IQbat_level": {
+      "statusIndicator": true
+    }
+  }
+}
