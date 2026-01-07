@@ -1,0 +1,13 @@
+{
+    "id": "IQbat_export",
+    "type": "number",
+    "title": {
+        "en": "Export today",
+        "nl": "Energie verkocht"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "units": "kWh",
+    "icon": "/assets/IQbat/IQbat_coins.svg"
+}

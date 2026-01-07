@@ -1,53 +1,5 @@
 {
   "1.0.0": {
     "en": "First version!"
-  },
-  "1.0.1": {
-    "en": "Updated the description."
-  },
-  "1.0.2": {
-    "en": "Improved the reconnection algorithm."
-  },
-  "1.0.3": {
-    "en": "Fixed an issue where meter values would be 1000x too high (kWh instead of Wh)."
-  },
-  "1.0.4": {
-    "en": "Increased the polling interval from once every minute, to once every ten seconds."
-  },
-  "1.0.5": {
-    "en": "Fixed an issue where the realtime power consumption would not live update."
-  },
-  "1.1.0": {
-    "en": "Added Battery, EV Charger and Meter."
-  },
-  "1.1.1": {
-    "en": "Small improvements."
-  },
-  "1.2.0": {
-    "en": "Added kWh values to the Meter."
-  },
-  "0.1.0": {
-    "en": "First version!"
-  },
-  "0.2.0": {
-    "en": "Replaced images."
-  },
-  "0.3.0": {
-    "en": "Removed power measurement, because it was too unreliable."
-  },
-  "0.4.0": {
-    "en": "Added support for accounts with multiple systems. Fixed an issue where devices would stay unavailable forever."
-  },
-  "0.5.0": {
-    "en": "Added local API for Homey Pro, to read live energy production."
-  },
-  "0.5.1": {
-    "en": "Fixed an issue where local meter values would be zero."
-  },
-  "0.6.0": {
-    "en": "Added support for multiple variants of inverters."
-  },
-  "0.6.1": {
-    "en": "Fixed an issue where saving the device settings would show an error."
   }
 }
