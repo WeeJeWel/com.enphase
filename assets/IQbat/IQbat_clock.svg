@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <path fill="black" d="M256,20C125.7,20,20,125.7,20,256s105.7,236,236,236s236-105.7,236-236S386.3,20,256,20z M256,452 c-108.2,0-196-87.8-196-196S147.8,60,256,60s196,87.8,196,196S364.2,452,256,452z"/>
+  
+  <rect fill="black" x="244" y="80" width="24" height="40"/> <rect fill="black" x="244" y="392" width="24" height="40"/> <rect fill="black" x="392" y="244" width="40" height="24"/> <rect fill="black" x="80" y="244" width="40" height="24"/> <rect fill="black" x="350" y="130" width="24" height="40" transform="rotate(45 362 150)"/>
+  <rect fill="black" x="138" y="342" width="24" height="40" transform="rotate(45 150 362)"/>
+  <rect fill="black" x="350" y="342" width="24" height="40" transform="rotate(-45 362 362)"/>
+  <rect fill="black" x="138" y="130" width="24" height="40" transform="rotate(-45 150 150)"/>
+
+  <path fill="black" d="M268,244V140c0-6.6-5.4-12-12-12s-12,5.4-12,12v116c0,3.3,1.3,6.5,3.7,8.8l60,60c4.7,4.7,12.3,4.7,17,0 s4.7-12.3,0-17L268,244z"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+    "id": "IQbat_home",
+    "type": "number",
+    "title": {
+        "en": "Home consumption today",
+        "nl": "Verbruik vandaag"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "units": "kWh",
+    "icon": "/assets/IQbat/IQbat_home.svg"
+}

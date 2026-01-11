@@ -1,0 +1,12 @@
+{
+  "id": "IQbat_last_update",
+  "type": "string",
+  "title": {
+    "en": "Last Update",
+    "nl": "Laatste update"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "assets/IQbat/IQbat_clock.svg"
+}
