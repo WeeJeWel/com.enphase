@@ -1,0 +1,17 @@
+{
+    "id": "IQbat_level",
+    "type": "number",
+    "title": {
+        "en": "Battery level",
+        "nl": "Batterij level"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "statusIndicator": "IQbat_level",
+    "units": "%",
+    "uiQuickAction": false,
+    "insights": true,
+    "decimals": 0,
+    "icon": "assets/IQbat/IQbat_battery.svg"
+}

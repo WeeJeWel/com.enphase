@@ -1,0 +1,53 @@
+{
+  "id": "com.enphase",
+  "version": "0.6.1",
+  "compatibility": ">=12.2.0",
+  "brandColor": "#F27321",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Enphase"
+  },
+  "description": {
+    "en": "Harness the sun to make, use, save, and sell your own power."
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Emile Nijssen",
+    "email": "emile@athom.nl"
+  },
+    "contributors": {
+    "developers": [
+      {
+        "name": "Emile Nijssen",
+        "email": "emile@athom.nl"
+      },
+      {
+        "name": "Maikel van de Wouw",
+        "email": "uknown"
+      }
+    ],
+    "translators": [
+      {
+        "name": "🇬🇧 Emile Nijssen"
+      },
+      {
+        "name": "🇳🇱 Emile Nijssen"
+      }
+    ]
+  },
+
+  "support": "mailto:emile@athom.nl",
+  "source": "https://github.com/WeeJeWel/com.enphase"
+}

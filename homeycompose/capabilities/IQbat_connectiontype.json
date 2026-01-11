@@ -1,0 +1,12 @@
+{
+    "id": "IQbat_connectiontype",
+    "type": "string",
+    "title": {
+        "en": "Connection Type",
+        "nl": "Verbindingstype"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "icon": "/assets/IQbat/IQbat_network.svg"
+}

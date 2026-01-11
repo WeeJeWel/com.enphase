@@ -1,0 +1,13 @@
+{
+    "id": "IQbat_grid_import",
+    "type": "number",
+    "title": {
+        "en": "Import today",
+        "nl": "Gekocht vandaag"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "units": "kWh",
+    "icon": "/assets/IQbat/IQbat_powerline.svg"
+}

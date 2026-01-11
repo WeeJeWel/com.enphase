@@ -1,0 +1,14 @@
+{
+    "id": "IQbat_solar_production",
+    "type": "number",
+    "title": {
+        "en": "Solar production today",
+        "nl": "Zonnestroom vandaag"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "units": "kWh",
+    "insights": true,
+    "icon": "assets/IQbat/IQbat_sun.svg"
+}
