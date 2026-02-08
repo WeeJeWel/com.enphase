@@ -2,7 +2,7 @@ import https from 'https';
 import fetch from 'node-fetch';
 import EnphaseDevice from '../../lib/iqbattery/iqbattery_EnphaseDevice.mjs';
 
-export default class EnphaseDeviceInverter extends EnphaseDevice {
+export default class EnphaseDeviceIQBattery extends EnphaseDevice {
 
   localAgent = new https.Agent({
     rejectUnauthorized: false,
@@ -23,7 +23,7 @@ export default class EnphaseDeviceInverter extends EnphaseDevice {
         this.onDiscoveryResult(discoveryResult);
       });
 
-      const discoveryResults = this.discoveryStrategy.getDiscoveryResults()
+      const discoveryResults = this.discoveryStrategy.getDiscoveryResults();
       for (const discoveryResult of Object.values(discoveryResults)) {
         this.onDiscoveryResult(discoveryResult);
       }
@@ -83,18 +83,18 @@ export default class EnphaseDeviceInverter extends EnphaseDevice {
 
     //connection type
     const connectionEntry = todayData?.connectionDetails?.[0];
-    let verbindingTekst = "Onbekend";
+    let connectionType  = "Onbekend";
     if (connectionEntry) {
 //      this.homey.log(`Status check: WiFi=${connectionEntry.wifi}, Ethernet=${connectionEntry.ethernet}`);
       if (connectionEntry.ethernet === true) {
-        verbindingTekst = "LAN";
+        connectionType = "LAN";
       } else if (connectionEntry.wifi !== null && connectionEntry.wifi !== undefined) {
         // Als wifi niet null is (bijv. true of een signaalsterkte string), dan is het WiFi
-        verbindingTekst = "WiFi";
+        connectionType = "WiFi";
       } else if (connectionEntry.cellular === true) {
-        verbindingTekst = "Mobiel";
+        connectionType = "Mobiel";
       } else {
-        verbindingTekst = "Offline";
+        connectionType = "Offline";
       }
     }
     await this.setCapabilityValue('iqbattery_connectiontype', verbindingTekst)
@@ -125,7 +125,7 @@ export default class EnphaseDeviceInverter extends EnphaseDevice {
     }).replace(',', ''); // Verwijdert de komma die JS soms tussen datum en tijd zet
     this.log(`Laatste update gezet op: ${dateString}`);
     if (typeof dateString === 'string' || typeof lastseen === 'number') {
-      // ... je dateString berekening ...
+      // Werk de iqbattery_last_update capability bij met de geformatteerde laatste-update 
       await this.setCapabilityValue('iqbattery_last_update', dateString)
         .catch(err => this.error('Error iqbattery_last_update:', err));
       this.homey.log(`LastCheck: ${dateString}`);
