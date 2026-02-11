@@ -1,4 +1,4 @@
-import EnphaseDevice from '../../lib/iqbattery/iqbattery_EnphaseDevice.mjs';
+import EnphaseDevice from '../../lib/EnphaseDevice.mjs';
 
 export default class EnphaseDeviceIQBattery extends EnphaseDevice {
 
