@@ -1,0 +1,12 @@
+{
+    "id": "iqbattery_connectiontype",
+    "type": "string",
+    "title": {
+        "en": "Connection Type",
+        "nl": "Verbindingstype"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "icon": "/assets/IQbat/iqbattery_network.svg"
+}

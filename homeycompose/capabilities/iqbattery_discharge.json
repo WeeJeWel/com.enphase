@@ -1,0 +1,14 @@
+{
+    "id": "iqbattery_discharge",
+    "type": "number",
+    "title": {
+        "en": "Battery Discharged",
+        "nl": "Batterij ontladen"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "insights": true,
+    "units": "kWh",
+    "icon": "/assets/IQbat/iqbattery_batterymin.svg"
+}

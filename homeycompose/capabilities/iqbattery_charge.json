@@ -1,0 +1,14 @@
+{
+    "id": "iqbattery_charge",
+    "type": "number",
+    "title": {
+        "en": "Battery Charged",
+        "nl": "Batterij geladen"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "insights": true,
+    "units": "kWh",
+    "icon": "/assets/IQbat/iqbattery_batteryplus.svg"
+}

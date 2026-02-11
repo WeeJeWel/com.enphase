@@ -1,0 +1,50 @@
+{
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "logo": "logo.svg"
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "settings": [
+    {
+      "id": "username",
+      "type": "text",
+      "label": {
+        "en": "Username"
+      }
+    },
+    {
+      "id": "password",
+      "type": "password",
+      "label": {
+        "en": "Password"
+      }
+    }
+  ]
+}
