@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.enphase",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "compatibility": ">=12.2.0",
   "brandColor": "#F27321",
   "sdk": 3,
@@ -28,110 +28,9 @@
     "name": "Emile Nijssen",
     "email": "emile@athom.nl"
   },
-  "contributors": {
-    "developers": [
-      {
-        "name": "Emile Nijssen",
-        "email": "emile@athom.nl"
-      },
-      {
-        "name": "Maikel van de Wouw"
-      }
-    ],
-    "translators": [
-      {
-        "name": "🇬🇧 Emile Nijssen"
-      },
-      {
-        "name": "🇳🇱 Emile Nijssen"
-      }
-    ]
-  },
   "support": "mailto:emile@athom.nl",
   "source": "https://github.com/WeeJeWel/com.enphase",
   "drivers": [
-    {
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "cloud"
-      ],
-      "images": {
-        "small": "/drivers/IQbattery/assets/images/small.png",
-        "large": "/drivers/IQbattery/assets/images/large.png",
-        "xlarge": "/drivers/IQbattery/assets/images/xlarge.png"
-      },
-      "pair": [
-        {
-          "id": "login_credentials",
-          "template": "login_credentials",
-          "options": {
-            "logo": "logo.svg"
-          }
-        },
-        {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
-        },
-        {
-          "id": "add_devices",
-          "template": "add_devices"
-        }
-      ],
-      "settings": [
-        {
-          "id": "username",
-          "type": "text",
-          "label": {
-            "en": "Username"
-          }
-        },
-        {
-          "id": "password",
-          "type": "password",
-          "label": {
-            "en": "Password"
-          }
-        }
-      ],
-      "id": "IQbattery",
-      "name": {
-        "nl": "Enphase IQ Batterij",
-        "en": "Enphase IQ Battery"
-      },
-      "class": "other",
-      "capabilities": [
-        "iqbattery_solar_production",
-        "iqbattery_grid_import",
-        "iqbattery_charge",
-        "iqbattery_discharge",
-        "iqbattery_home",
-        "iqbattery_export",
-        "iqbattery_last_update",
-        "iqbattery_level",
-        "iqbattery_connectiontype",
-        "measure_battery"
-      ],
-      "statusIndicator": "measure_battery",
-      "capabilitiesOptions": {
-        "iq_battery_connectiontype": {
-          "title": {
-            "en": "Connection",
-            "nl": "Verbinding"
-          }
-        }
-      },
-      "energy": {
-        "batteries": [
-          "INTERNAL"
-        ]
-      }
-    },
     {
       "platforms": [
         "local",
@@ -211,132 +110,90 @@
         }
       },
       "id": "inverter"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/iqbattery/assets/images/small.png",
+        "large": "/drivers/iqbattery/assets/images/large.png",
+        "xlarge": "/drivers/iqbattery/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "logo.svg"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "username",
+          "type": "text",
+          "label": {
+            "en": "Username"
+          }
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password"
+          }
+        }
+      ],
+      "id": "iqbattery",
+      "name": {
+        "en": "IQ Battery",
+        "nl": "IQ Batterij"
+      },
+      "class": "battery",
+      "capabilities": [
+        "iqbattery_solar_production",
+        "iqbattery_grid_import",
+        "iqbattery_charge",
+        "iqbattery_discharge",
+        "iqbattery_home",
+        "iqbattery_export",
+        "iqbattery_last_update",
+        "iqbattery_level",
+        "iqbattery_connectiontype",
+        "measure_battery"
+      ],
+      "statusIndicator": "measure_battery",
+      "capabilitiesOptions": {
+        "iq_battery_connectiontype": {
+          "title": {
+            "en": "Connection",
+            "nl": "Verbinding"
+          }
+        }
+      },
+      "energy": {
+        "batteries": [
+          "INTERNAL"
+        ]
+      }
     }
   ],
-  "capabilities": {
-    "iqbattery_charge": {
-      "id": "iqbattery_charge",
-      "type": "number",
-      "title": {
-        "en": "Battery Charged",
-        "nl": "Batterij geladen"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "insights": true,
-      "units": "kWh",
-      "icon": "/assets/IQbat/iqbattery_batteryplus.svg"
-    },
-    "iqbattery_connectiontype": {
-      "id": "iqbattery_connectiontype",
-      "type": "string",
-      "title": {
-        "en": "Connection Type",
-        "nl": "Verbindingstype"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "icon": "/assets/IQbat/iqbattery_network.svg"
-    },
-    "iqbattery_discharge": {
-      "id": "iqbattery_discharge",
-      "type": "number",
-      "title": {
-        "en": "Battery Discharged",
-        "nl": "Batterij ontladen"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "insights": true,
-      "units": "kWh",
-      "icon": "/assets/IQbat/iqbattery_batterymin.svg"
-    },
-    "iqbattery_export": {
-      "id": "iqbattery_export",
-      "type": "number",
-      "title": {
-        "en": "Export today",
-        "nl": "Energie verkocht"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "units": "kWh",
-      "icon": "/assets/IQbat/iqbattery_coins.svg"
-    },
-    "iqbattery_grid_import": {
-      "id": "iqbattery_grid_import",
-      "type": "number",
-      "title": {
-        "en": "Import today",
-        "nl": "Gekocht vandaag"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "units": "kWh",
-      "icon": "/assets/IQbat/iqbattery_powerline.svg"
-    },
-    "iqbattery_home": {
-      "id": "iqbattery_home",
-      "type": "number",
-      "title": {
-        "en": "Home consumption today",
-        "nl": "Verbruik vandaag"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "units": "kWh",
-      "icon": "/assets/IQbat/iqbattery_home.svg"
-    },
-    "iqbattery_last_update": {
-      "id": "iqbattery_last_update",
-      "type": "string",
-      "title": {
-        "en": "Last Update",
-        "nl": "Laatste update"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "icon": "/assets/IQbat/iqbattery_clock.svg"
-    },
-    "iqbattery_level": {
-      "id": "iqbattery_level",
-      "type": "number",
-      "title": {
-        "en": "Battery level",
-        "nl": "Batterij level"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "statusIndicator": "iqbattery_level",
-      "units": "%",
-      "uiQuickAction": false,
-      "insights": true,
-      "decimals": 0,
-      "icon": "/assets/IQbat/iqbattery_battery.svg"
-    },
-    "iqbattery_solar_production": {
-      "id": "iqbattery_solar_production",
-      "type": "number",
-      "title": {
-        "en": "Solar production today",
-        "nl": "Zonnestroom vandaag"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "units": "kWh",
-      "insights": true,
-      "icon": "/assets/IQbat/iqbattery_sun.svg"
-    }
-  },
   "discovery": {
     "enphase-envoy": {
       "type": "mdns-sd",
