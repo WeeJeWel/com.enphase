@@ -1,12 +1,11 @@
 {
-"$extends": "enphase",
-"id": "iqbattery",
-
+  "$extends": "enphase",
+  "id": "iqbattery",
   "name": {
-    "nl": "Enphase IQ Batterij",
-    "en": "Enphase IQ Battery"
+    "en": "IQ Battery",
+    "nl": "IQ Batterij"
   },
-  "class": "other",
+  "class": "battery",
   "capabilities": [
     "iqbattery_solar_production",
     "iqbattery_grid_import",
@@ -33,7 +32,7 @@
       "INTERNAL"
     ]
   },
-    "images": {
+  "images": {
     "small": "{{driverAssetsPath}}/images/small.png",
     "large": "{{driverAssetsPath}}/images/large.png",
     "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
