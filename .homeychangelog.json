@@ -52,5 +52,8 @@
   },
   "0.7.0": {
     "en": "Added support for IQ Battery"
+  },
+  "0.7.1": {
+    "en": "Added contributors."
   }
 }
