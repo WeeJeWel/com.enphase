@@ -202,6 +202,15 @@
     }
   ],
   "capabilities": {
+    "inverter_microinverter_status": {
+      "type": "string",
+      "title": {
+        "en": "Microinverter Status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
     "iqbattery_charge": {
       "id": "iqbattery_charge",
       "type": "number",

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Microinverter Status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}
